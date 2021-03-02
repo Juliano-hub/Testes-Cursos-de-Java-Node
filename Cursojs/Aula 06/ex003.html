@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+
+    <style>
+    body{
+        background-color:burlywood;
+        color:brown;
+        font: normal 20pt Arial;
+    }
+    /* Comentário em CSS */
+    h1{
+        color:rgb(0, 0, 0);
+    }
+    </style>
+
+</head>
+<body>
+
+    <h1>Olá Mundo!</h1>
+    <!-- título, esse é o comentário do HTML-->
+
+    <p>já me livrei da maldição</p>
+
+    <script>
+   var n1 = Number( window.prompt('Digite um valor') ); 
+   // n1 recebe um valor string quando retornar, por isso usa o Number para modificar o tipo
+  
+   // Number() = o programa decide conforme a entrada para qual tipo converter
+   // Number.parseInt() = forço a ser int
+   // Number.parseFloat() = forço a ser float
+
+   var n2 = Number( window.prompt('Digite um segundo valor') ); 
+   // n1 recebe um valor string quando retornar, por isso usa o Number para modificar o tipo
+
+   var n3 = n1 + n2;
+
+   window.alert('A soma dos dois valores é:' + n3);
+   // (number + number) para string
+   // (string + string) para concatenação
+
+   window.alert('Faz o mesmo, mas convertendo o n3 para string:' + String(n3) );
+   window.alert(`Mostra usando template de String(placeholder): ${n3}`);
+    </script>
+
+</body>
+</html>
