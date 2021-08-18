@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>Primeiro Video</title>
+</head>
+<body>
+    <button type="button" onclick="BotaoApertado()">Clique aqui</button>
+                        <!–- onclick chama a função que estivar ali quando apertar o botão -–>
+    <button type="button" onclick="Redirecionar()">Redirecionar</button>
+
+    <p id="passarMouse" onmouseover="PassarMouse(this)" onmouseout="TirarMouse(this)">Passe o mouse aqui</p>
+    <p id="agradecimento"></p>
+
+    <select onchange="funcaoChange(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+    
+
+</body>
+</html>
