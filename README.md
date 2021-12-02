@@ -4,4 +4,4 @@ Criando APIs com NodeJs: feito seguindo os passos do canal balta.io, https://www
 
 CursoNode.js: Curso seguindo a playlist https://www.youtube.com/watch?v=LLqq6FemMNQ&list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B&index=1
 
-Cursojs: Curso realizado de Python pelo youtube: https://www.youtube.com/watch?v=BXqUH86F-kA&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm&index=1 do canal curso em vídeo.
+Cursojs: Curso realizado pelo youtube: https://www.youtube.com/watch?v=BXqUH86F-kA&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm&index=1 do canal curso em vídeo.
