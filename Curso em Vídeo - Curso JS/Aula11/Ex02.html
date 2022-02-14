@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Type the speed: <input type="number" name="Speed" id="Speed">
+    <button onclick="handleClick()">Verify</button>
+    <div id="res">
+
+    <script>
+        function handleClick(){
+            var GetId = window.document.getElementById('Speed')
+            var GetSpeed = Number(GetId.value)
+            
+            var Result = window.document.getElementById('res')
+            if(GetSpeed > 60){
+                Result.innerHTML = "You exceeded the speed limit!!!"
+            }else{
+                Result.innerHTML = "You are under the speed limit!!!"
+            }
+        }
+
+    </script>
+
+</body>
+</html>
