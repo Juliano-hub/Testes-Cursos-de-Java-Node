@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(39, 170, 170);
+            font: normal;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id='Click'>Click here</div> <br/><br/>
+    <p>Test DOM</p>
+    <p>Test Js</p> <br/><br/>
+
+    <script>
+        var p = window.document.getElementsByTagName('p')[1]
+        p.style.color = 'black'
+        window.document.write(p.innerText)
+
+        var C = window.document.getElementById('Click')
+        C.style.color = 'Blue'
+    </script>
+    
+</body>
+</html>
