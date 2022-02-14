@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(61, 178, 255);
+        }
+        .DivAlign{
+            margin-top: 40%;
+        }
+        .BorderForm{
+            width: 300px;
+            height: 600px;
+            background-color: rgb(255, 255, 255);
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);  
+            text-align: center;
+
+            border-radius: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="BorderForm">
+        <div class="DivAlign">
+            <h1>Multiplication table</h1>
+           Write an number: <input type="number" name="Input" id="Input"> <br/>
+            <button onclick="handleClick()">Count</button> <br/>
+            Click for result: <select  id="List"></select>
+        </div>
+    </div>
+
+    <script>
+        function handleClick(){
+            NumInput = Number( window.document.getElementById('Input').value )
+            ListNumber = window.document.getElementById('List')
+
+            for(var i = 0; i<=10 ; i++){
+                let option = document.createElement('option');
+                option.text = `${i} * ${NumInput} = ${i * NumInput}`;
+                ListNumber.append(option);
+            }
+
+        }
+    </script>
+
+
+</body>
+</html>
