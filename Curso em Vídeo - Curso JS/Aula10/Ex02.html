@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sum numbers</h1>
+    <input type="number" name="Var1" id="Var1"> +
+    <input type="number" name="Var2" id="Var2">
+    <button onclick="Sum()">Sum</button>
+    <div id="result"></div>
+    <script>
+        function Sum(){
+            Tvar1 = window.document.getElementById('Var1') 
+            Tvar2 = window.document.querySelector('input#Var2') 
+            res = window.document.getElementById('result')
+
+            N1 = Number(Tvar1.value)
+            N2 = Number(Tvar2.value)
+            // Get the value from the element 
+
+            res.innerHTML = `Result: ${N1+N2}`
+        }
+    </script>
+
+</body>
+</html>
