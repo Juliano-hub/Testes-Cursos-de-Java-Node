@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(61, 178, 255);
+        }
+        .DivAlign{
+            margin-top: 40%;
+        }
+        .BorderForm{
+            width: 300px;
+            height: 600px;
+            background-color: rgb(255, 255, 255);
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);  
+            text-align: center;
+
+            border-radius: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="BorderForm">
+        <div class="DivAlign">
+            <h1>Vector test</h1>
+           Write an number: <input type="number" name="Input" id="Input"> <br/>
+            <button onclick="handleClick()">Add number in the list</button> <br/><br/> 
+            Click to show the list: <select  id="List"></select> <br/>
+
+            <button onclick="Show()">Show Results</button> <br/>
+            <div id="ShowResults"></div>
+        </div>
+    </div>
+
+    <script>
+        let VectorNumbers = []
+
+        function handleClick(){
+            
+            NumInput = Number( window.document.getElementById('Input').value )
+            ListNumber = window.document.getElementById('List')
+
+
+            let option = document.createElement('option');
+            option.text = NumInput;
+            ListNumber.append(option);
+
+            VectorNumbers.push(NumInput)
+
+        }
+
+        function Show(){
+            Display = window.document.getElementById('ShowResults')
+
+            console.log(ListNumber.options.length)
+            console.log(ListNumber)
+
+
+            console.log(VectorNumbers)
+            Max = Math.max(...VectorNumbers)
+            console.log(Max)
+            Min = Math.min(...VectorNumbers)
+
+            let Sum = 0
+            for (var i in VectorNumbers) {
+                 Sum += VectorNumbers[i];
+            }
+
+            Average = Sum / VectorNumbers.length
+            console.log(Max)
+            Display.innerHTML += `</br>Max number: ${Max} </br>`
+            Display.innerHTML += `Min number: ${Min}</br>`
+            Display.innerHTML += `Sum: ${Sum}</br>`
+            Display.innerHTML += `Average: ${Average}</br>`
+        }
+    </script>
+
+
+</body>
+</html>
